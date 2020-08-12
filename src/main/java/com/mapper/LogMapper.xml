@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.LogMapper">
+	<cache readOnly="true"></cache><!-- 如果不加readOnly="true 就要把所有的pojo类都要实现序列化接口 -->
+	
+	<select id="selAll" resultType="LogInfo">
+		select * from log
+	</select>
+	
+	<select id="selAll1" resultType="LogInfo">
+		select * from log
+	</select>
+	<select id="selAll2" resultType="LogInfo">
+		select * from log
+	</select>
+	
+</mapper>
